@@ -27,7 +27,7 @@ class Api::BidsController < ApplicationController
 		    end
 		else
 			respond_to do |format|
-		        format.html { redirect_to :back, :notice => 'You have no more bids left or auction ended' }
+		        format.html { redirect_to :back, :notice => 'you have no more bids left or auction ended' }
 		        format.json { render :json => @bid.errors, :status => :unprocessable_entity }
 		    end
 	    end
