@@ -18,7 +18,7 @@ class Api::BidsController < ApplicationController
 		      if @bid.save
 	    		@product.save
 	    		@user.save
-		        format.html { redirect_to :back, :notice => 'Bid was successfully placed!' }
+		        format.html { redirect_to :back, :notice => 'Your bid was successfully placed!' }
 		        format.json { render :json => @product, :status => :created, :location => @product }
 		      else
 		        format.html { render :action => "new" }
